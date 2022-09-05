@@ -22,7 +22,10 @@ def create_app(test_config=None):
     @app.route("/")
     @app.route("/base")
     def base():
-        return render_template("base.html", base="base")
+
+        return render_template(
+            "base.html", image_path=os.path.join("static", "bstroh.png")
+        )
 
     app.add_url_rule("/", endpoint="index")
 
