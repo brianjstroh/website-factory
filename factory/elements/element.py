@@ -20,11 +20,3 @@ class Element(ABC):
     def python(self) -> None:
         """Return the Python code for the Element"""
         raise NotImplementedError
-
-    def to_html(self) -> None:
-        """Write the element to its HTML page"""
-        raise NotImplementedError
-
-    def to_python(self) -> None:
-        """Write the element to its Python module"""
-        raise NotImplementedError
